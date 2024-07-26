@@ -83,25 +83,25 @@ class Character:
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_RIGHT and self.right < width:
-                    self.rect.x += 3
+                    self.rect.x += 5
                     self.right = self.rect.right
                     self.left = self.rect.left
                     self.step_counter('east')
                     return True
                 if event.key == pygame.K_LEFT and self.left > 0:
-                    self.rect.x -= 3
+                    self.rect.x -= 5
                     self.right = self.rect.right
                     self.left = self.rect.left
                     self.step_counter('west')
                     return True
                 if event.key == pygame.K_DOWN and self.bot < height:
-                    self.rect.y += 3
+                    self.rect.y += 5
                     self.top = self.rect.top
                     self.bot = self.rect.bottom
                     self.step_counter('south')
                     return True
                 if event.key == pygame.K_UP and self.top > 0:
-                    self.rect.y -= 20
+                    self.rect.y -= 5
                     self.top = self.rect.top
                     self.bot = self.rect.bottom
                     self.step_counter('north')

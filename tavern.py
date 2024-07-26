@@ -152,7 +152,7 @@ scenes = {
         'animated check': False,
         'animal check': False,
         'return check': True,
-        'battle check': False,
+        'battle check': True,
         'special check': False,
         'slime check': False,
         'obstacles': [],
