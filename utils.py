@@ -139,7 +139,6 @@ def special_collision(player, group):
     counter = 0
     for each in group.sprites():
         while each.top <= player.rect.center[1] <= each.bot and each.left <= player.rect.center[0] <= each.right:
-            print(player.rect.center)
             counter += 1
             if counter == 20:
                 return True

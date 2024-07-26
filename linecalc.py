@@ -1,9 +1,3 @@
-import pdb
-
-from hometown import tavern_scene
-from classes import Obstacle
-
-
 def left(calc_list):
     calculated_list = []
     for each in calc_list:

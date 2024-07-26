@@ -1,8 +1,5 @@
-import pdb
-import time
 from textbox import TextBox
 import pygame
-from utils import boundary_top, boundary_right, boundary_left, boundary_bottom
 
 size = width, height = 640, 640
 screen = pygame.display.set_mode(size)

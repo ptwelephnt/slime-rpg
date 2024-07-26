@@ -1,11 +1,7 @@
-import pdb
 import sys
-import threading
-import time
 
 import pygame as py
-from classes import AnimatedObj, Character, Background
-from sceneloader import load_slime, load_player, load_animated, load_scene
+from sceneloader import load_player, load_animated, load_scene
 from tavern import scenes
 
 py.init()

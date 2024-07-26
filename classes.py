@@ -1,5 +1,4 @@
 import pygame
-from utils import boundary_top, boundary_left, boundary_bottom, boundary_right
 from tavern import battle_characters
 import time
 

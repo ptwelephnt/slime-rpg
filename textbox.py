@@ -1,7 +1,5 @@
 from utils import character_spacing, alphabet_dictionary
 import pygame
-import sys
-import time
 
 pygame.init()
 size = width, height = 640, 640
@@ -80,6 +78,5 @@ class TextBox(pygame.sprite.Sprite):
             letter.rect.x += self.stored_spacing
             self.text_group.add(letter)
             self.stored_spacing += character_spacing(text_input[self.text_index])
-            print(text_input[self.text_index], letter.rect.x, letter.rect.y)
         self.text_index += 1
         return self.text_group.draw(screen), True, False

@@ -1,9 +1,8 @@
-import pdb
 import pygame
 import time
 from classes import Character, Background, Obstacle, NPC, AnimatedObj, Enemy, BattleGroup, BattleMenu, HealthBar
 from animals import Animal
-from tavern import battle_characters, battle_menu, scenes
+from tavern import battle_characters, battle_menu
 from slime import Slime
 
 
