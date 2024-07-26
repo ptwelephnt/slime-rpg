@@ -1,0 +1,14 @@
+159 = 20 + 88 + 5x
+139
+51
+
+starts @ 20, then +32
+
+
+            	
+def enemy_pos(self, pos):
+	enemy_list = pygame.sprite.Group.sprites(enemies)
+	enemy = enemy_list[self.position]
+	self.x = enemy.rect.x + enemy.rect.width / 2
+	self.y = enemy.rect.y
+	return (self.x, self.y)

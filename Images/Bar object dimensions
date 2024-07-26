@@ -1,0 +1,32 @@
+(top, left, width, height)
+
+Upper:
+	Chairs: (Chair backs = 12px)
+		North: (157, 80, 39, 49)
+		East: (241, 148, 40, 56)
+		South: (160, 226, 40, 56)
+		West: (71, 147, 40, 56)
+
+	Table: (128, 146, 96, 82)
+
+
+		left = coord[0], coord[1], coord[0], (coord[1] + coord[3])
+		right = (coord[0] + coord[2]), coord[1], (coord[0] + coord[2]), coord[1]
+		top = coord[0], coord[1], (coord[0] + coord[2]), coord[1]
+		bottom = coord[0], (coord[1] + coord[3]), (coord[0] + coord[2]), (coord[1] + coord[3])
+
+Lower:
+	Chairs:
+		North: (157, 349, 39, 49)
+		East: (238, 414, 40, 56)
+		South: (161, 487, 40, 56)
+		West: (78, 412, 40, 56)
+
+	Table: (128, 405, 96, 82)
+
+Exit: (280, 0, 80, 40)
+
+Bar: (434, 210, 206, 430)
+Bar Door: (604, 210, 37, 48)
+
+[[71, 147, 40, 56], [128, 146, 96, 82], [78, 412, 40, 56], [128, 405, 96, 82], [434, 210, 206, 430]]
