@@ -7,3 +7,5 @@ The purpose of building it was to apply the knowledge gained from courses I was 
 To run, install the required packages from `requirements.txt`. Then, run `python main.py`. There are a few scenes to walk through, a couple of which are hidden!
 
 There is also an incomplete opening scene, which can be viewed by running `python opening.py`.
+
+## *The game must be closed using the window's X button.*
