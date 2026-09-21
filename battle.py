@@ -11,7 +11,7 @@ clock = pygame.time.Clock()
 
 
 def narrate(text):
-    bar = pygame.image.load('images/battle/NarrateBar.png')
+    bar = pygame.image.load('Images/Battle/NarrateBar.png')
     image_sprite = pygame.sprite.Sprite()
     image_sprite.image = bar
     image_sprite.rect = bar.get_rect()

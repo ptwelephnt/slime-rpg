@@ -12,7 +12,7 @@ black = 0, 0, 0
 
 
 class Animal(pygame.sprite.Sprite):
-    def __init__(self, image, action='walk', direction='north', x=0, y=0):
+    def __init__(self, image, action='Walk', direction='North', x=0, y=0):
         super().__init__()
         self.png = 1
         self.image_base = image
@@ -68,24 +68,24 @@ class Animal(pygame.sprite.Sprite):
     def pick_direction(self):
         if randint(0, 9) % 2 != 0:
             pick = randint(0, 3)
-            directions = ['north', 'south', 'east', 'west']
+            directions = ['North', 'South', 'East', 'West']
             self.direction = directions[pick]
         self.loop_end = False
         self.png = 1
 
     def movement(self):
-        self.action = 'walk'
-        if self.direction == 'north':
+        self.action = 'Walk'
+        if self.direction == 'North':
             self.rect.y -= 3
-        if self.direction == 'south':
+        if self.direction == 'South':
             self.rect.y += 3
-        if self.direction == 'east':
+        if self.direction == 'East':
             self.rect.x += 3
-        if self.direction == 'west':
+        if self.direction == 'West':
             self.rect.x -= 3
 
     def eat(self):
-        self.action = 'eat'
+        self.action = 'Eat'
         if self.counter == 5 and self.png != 4 and self.up:
             self.png += 1
             self.counter = 0

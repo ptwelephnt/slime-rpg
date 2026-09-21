@@ -9,7 +9,7 @@ w, h = pygame.display.get_window_size()
 
 
 def narrate(text):
-    bar = pygame.image.load('images/battle/NarrateBar.png')
+    bar = pygame.image.load('Images/Battle/NarrateBar.png')
     image_sprite = pygame.sprite.Sprite()
     image_sprite.image = bar
     image_sprite.rect = bar.get_rect()
@@ -42,7 +42,7 @@ class Background:
 
 
 class Character:
-    def __init__(self, image, action, png=1, direction='north', x=0, y=0):
+    def __init__(self, image, action, png=1, direction='North', x=0, y=0):
         super().__init__()
         self.png = png
         self.direction = direction
@@ -85,28 +85,28 @@ class Character:
                     self.rect.x += 5
                     self.right = self.rect.right
                     self.left = self.rect.left
-                    self.step_counter('east')
+                    self.step_counter('East')
                     return True
                 if event.key == pygame.K_LEFT and self.left > 0:
                     self.rect.x -= 5
                     self.right = self.rect.right
                     self.left = self.rect.left
-                    self.step_counter('west')
+                    self.step_counter('West')
                     return True
                 if event.key == pygame.K_DOWN and self.bot < height:
                     self.rect.y += 5
                     self.top = self.rect.top
                     self.bot = self.rect.bottom
-                    self.step_counter('south')
+                    self.step_counter('South')
                     return True
                 if event.key == pygame.K_UP and self.top > 0:
                     self.rect.y -= 5
                     self.top = self.rect.top
                     self.bot = self.rect.bottom
-                    self.step_counter('north')
+                    self.step_counter('North')
                     return True
 
-    def change_direction(self, direction, action='walk'):
+    def change_direction(self, direction, action='Walk'):
         self.action = action
         self.direction = direction
         self.png = 1
